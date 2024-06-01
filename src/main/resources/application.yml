@@ -5,15 +5,21 @@ spring:
     name: ${app.name}
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${db.host}:${db.port}/${db.name}
+    url: jdbc:postgresql://localhost:5432/${db.name}
     username: ${db.username}
     password: ${db.password}
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: validate
     properties:
       show_sql: true
       format_sql: true
+    open-in-view: false
+  flyway:
+    out-of-order: true
+    # create-schemas: true
+    baseline-on-migrate: true
+    baseline-version: 1
 #  security:
 #    oauth2:
 #      client:
