@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.svngdo</groupId>
-    <artifactId>news-hub-be</artifactId>
+    <artifactId>newshub-be</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>news-hub-be</name>
-    <description>news-hub-be</description>
+    <name>newshub-be</name>
+    <description>newshub-be</description>
     <properties>
         <java.version>17</java.version>
         <flyway.version>10.13.0</flyway.version>
@@ -26,11 +26,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.flywaydb</groupId>-->
-<!--            <artifactId>flyway-core</artifactId>-->
-<!--            <version>${flyway.version}</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-database-postgresql</artifactId>
